@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shri Ganesh Corp | Sign-Up</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,900&display=swap" rel="stylesheet">
+  <style type="text/css">
+    .col-3{
+      flex-basis: 30px;
+      min-width: 250px;
+      margin-bottom: 30px;
+    }
+    .small-container{
+      max-width: 1080px;
+      margin: auto;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .row{
+      margin-top:  100px;
+    }
+    .col-4{
+      flex-basis:50%;
+      padding: 100px;
+      min-width: 200px;
+      margin-bottom: 50px;
+      transition: transform 0.5s;
+    }
+    .col-4 img{
+      width: 100%;
+    }
+    .title{
+      text-align: center;
+      margin: 0 auto 80px;
+      position: relative;
+      line-height: 60px;
+      color: #555;
+    }
+    .title:after{
+      content: '';
+      background: #ff523b;
+      width: 80px;
+      height: 5px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    h4{
+      color: #555;
+      font-weight: normal;
+
+    }
+    .col-4 p{
+      font-size: 14px;
+
+    }
+    .rating .fa{
+      color: red;
+    }
+    .col-4:hover{
+      transform: translateY(-5px);
+    }
+
+    .btn{display: inline-block;
+  background:#ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;}
+
+  .footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+  }
+
+  .footer p{
+    color: #8a8a8a;
+  }
+
+  .footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .footer-col-1,.footer-col-2,.footer-col-3{
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  .footer-col-1{
+    flex: 1;
+    text-align: center;
+  }
+  .footer-col-1 img{
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  .footer-col-2,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+  }
+
+  ul{
+    list-style-type: none;
+
+  }
+  .menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+  }
+  .sing-up-form{
+  width: 300px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+  background: #fff;
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
+
+}
+
+.input-box{
+border-radius: 20px;
+padding: 10px;
+margin: 10px 0;
+width: 100%;
+border: 1px solid #999;
+outline: none;
+
+}
+button{
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+
+}
+.sign-btn{
+
+  background-color: #1c8adb;
+
+
+}
+
+a{
+  text-decoration: none;
+}
+hr{
+  margin-top: 20px;
+  width: 80%;
+}
+
+.or{
+
+  background: #fff;
+  width: 30px;
+  margin: -27px auto 10px;
+}
+
+
+  @media only screen and (max-width: 800px){nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+nav ul li{
+  display: block;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+nav ul li a{
+  color: white;
+}
+.menu-icon{
+  display: block;
+  cursor: pointer;
+}
+  }
+
+
+  @media only screen and (max-width: 800px){
+    .row{
+      text-align: center;
+    }
+    .col-2,.col-3,.col-4{
+      flex-basis: 100%;
+
+    }
+  }
+
+
+  </style>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+  <div class="header" style="background: radial-gradient(#fff,#ffd6d6);">
+  <div class="container">
+<div class="navbar">
+  <div class="logo">
+    <img src="logo1.png" width="125px">
+  </div>
+  <nav>
+    <ul id="menuitems">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html ">Product</a></li>
+      <li><a href="about.html">Contact</a></li>
+      <li><a href="contact.html">Sign-Up</a></li>
+      <li><a href="login.html">Log-In</a></li>
+    </ul>
+  </nav>
+  <img src="cart.png " width="30px" height="30px" >
+  <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+</div>
+<div class="row">
+  <div class="col-2">
+    <h1>
+The strength <br> is amazing</h1>
+<p>Success isn't always about greatness. It's about consistency. <br>Consistent hard work gains success. Greatness will cime.</p>
+<a href="" class="btn">Explore Now &#x27A4;</a>
+</div>
+<div class="col-2">
+<img src="im1.png" style=" max-width: 350px;
+  padding: 50px 0;">
+</div>
+</div>
+</div></div>
+
+<div class="sing-up-form">
+  <h1 style="color: blue;
+  margin-bottom: 30px;">Sing Up Now</h1>
+  <form action="signup.html" method="post">
+
+    <input type="text" name="fname" class="input-box" placeholder="Your First Name">
+
+    <input type="text" name="lname" class="input-box" placeholder="Your Last Name">
+
+    <input type="email" name="ueamil" class="input-box" placeholder="Your Email">
+
+    <input type="password" name="upass" class="input-box" placeholder="Your Password">
+
+    <p><span><input type="checkbox">I agree to the terms</span></p>
+    <button type="submit" class="sign-btn">Sign Up</button><hr>
+    <p class="or">OR</p>
+    <p>Do you have an account?<a href="login.html">Sign-In</a></p>
+  </form>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <img src="images/logo1.png">
+        <p>Our Purpose Is To Sustainably Mskr The Pleasure and Benifits of Suports Accessible to the Many.</p>
+      </div>      
+      <div class="footer-col-2">
+      <h3>Useful Link</h3>
+      <ul><li>Coupons</li>
+        <li>Return Policy</li>
+      </ul>
+      </div>
+          <div class="footer-col-3">
+      <h3>Follow Us</h3>
+      <ul><li>Facebook</li>
+        <li>Instagram</li>
+        <li>Twitter</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div><br><br><br>
+<script type="text/javascript">
+  var menuitems= document.getElementById('menuitems');
+  menuitems.style.maxHeight ="0px";
+  function menutoggle() {
+    if (menuitems.style.maxHeight =="0px") {
+
+      menuitems.style.maxHeight ="200px"
+    }
+    else{
+      menuitems.style.maxHeight ="0px"
+    }
+  }
+</script>
+</body> 
+</html>
